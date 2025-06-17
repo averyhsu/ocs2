@@ -7,13 +7,13 @@
     <arg name="multiplot"          default="false"/>
 
     <!-- The task file for the mpc. -->
-    <arg name="taskFile"          default="$(find ocs2_legged_robot)/config/mpc/task.info"/>
+    <arg name="taskFile"          default="$(find go2_description)/config/goTask.info"/>
     <!-- The reference related config file of the robot -->
-    <arg name="referenceFile"     default="$(find ocs2_legged_robot)/config/command/reference.info"/>
+    <arg name="referenceFile"     default="$(find go2_description)/config/goReference.info"/>
     <!-- The URDF model of the robot -->
-    <arg name="urdfFile"          default="$(find ocs2_robotic_assets)/resources/anymal_c/urdf/anymal.urdf"/>
+    <arg name="urdfFile"          default="$(find go2_description)/urdf/go2_description.urdf"/>
     <!-- The file defining gait definition -->
-    <arg name="gaitCommandFile"   default="$(find ocs2_legged_robot)/config/command/gait.info"/>
+    <arg name="gaitCommandFile"   default="$(find go2_description)/config/goGait.info"/>
 
     <!-- rviz -->
     <group if="$(arg rviz)">
